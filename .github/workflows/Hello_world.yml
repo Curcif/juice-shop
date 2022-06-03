@@ -42,7 +42,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Print Hello World Windows
-      - run: echo Hello, World - Windows
+        run: echo Hello, World - Windows
 
   hello-world-macos:
     name: Hello World MacOS
@@ -50,4 +50,4 @@ jobs:
     needs: [hello-world-ubuntu, hello-world-windows]
     steps:
       - name: Print Hello World MacOS
-      - run: echo Hello, World - MacOS
+        run: echo Hello, World - MacOS
